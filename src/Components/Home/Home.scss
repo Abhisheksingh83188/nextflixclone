@@ -1,0 +1,118 @@
+$bg:black;
+ .banner{
+       height: 40vmax;
+       background-color: $bg;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 3.3vmax;
+      box-sizing: border-box;
+
+      &::after{
+       content: " ";
+       width: 100%;
+       height: 100%;
+       top: 0;
+       left: 0;
+       position: absolute;
+       background: $bg;
+       opacity: 0.2;
+      }
+h1,p{
+       color: white;
+       width: 40%;
+       font-size:2.8vmax ;
+       z-index: 10;
+}
+p{
+font-size: 1.1vmax;
+word-spacing: 0.34vmax;
+font-weight: 100;
+color: rgb(198, 206, 213);
+}
+> div{
+       display:flex;
+       button{
+              padding: 0.5vmax;
+              margin: 1.5vmax;
+              width: 8vmax
+              ;
+              outline: none;
+              border: none;
+              z-index: 10;
+              border-radius: 1vmax;
+              font-size: 1.25vmax;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+             transition: all 0.5s ease;
+           &:hover{
+              opacity: 0.5;
+           }
+
+              &:nth-child(odd){
+              background-color: brown;
+              filter: drop-shadow(0 5px 10px);
+              cursor: pointer;
+              color: rgb(255, 255, 255);
+              }
+              &:nth-child(even){
+              background-color: 
+              rgb(230, 156, 231);
+              filter: drop-shadow(0 5px 10px);
+              cursor: pointer;
+              }
+              svg{
+                     font-size: 1.9vmax;
+                     margin: 0 1vmax;
+              }
+       }
+}
+
+
+ }
+ .row{
+padding: 1rem;
+background-color: $bg;
+>div{
+       display: flex;
+       overflow-x: auto;
+       padding: 1rem;
+}
+
+ }
+  .card{
+       width: 200px;
+       margin: 0.7rem;
+       cursor: pointer;
+       transition:transform 0.5s ;
+       &:hover{
+              transform: translateY(-10px) scale(1);
+       }
+  }
+  .genreBox{
+       overflow-x: auto;
+       display: flex;
+       height: 100px;
+       background-color: $bg;
+      > a {
+       color: black;
+       background-color:white;
+       padding: 1rem 0;
+       text-align: center;
+       margin: 1rem;
+       border-radius: 5px;
+       transition: all 0.3s ease;
+       min-width: 10rem;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       &:hover{
+              background-color: antiquewhite;
+              transform: translateY(1.8px) scale(1);
+       }
+}
+      }
